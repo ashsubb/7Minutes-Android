@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/workout_log_item_size">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zenlabs.sevenminuteworkout.utils.FontTextView
+            android:id="@+id/workoutLogDateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/padding_workout_share_title"
+            android:layout_marginRight="@dimen/padding_workout_share_title"
+            android:layout_marginTop="@dimen/padding_action_bar"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/workout_log_date_text_size"
+            font:customFont="SohoGothicPro-Regular.otf" />
+
+        <com.zenlabs.sevenminuteworkout.utils.FontTextView
+            android:id="@+id/workoutLogStaticTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/workoutLogDateTextView"
+            android:layout_marginLeft="@dimen/padding_workout_share_title"
+            android:layout_marginRight="@dimen/padding_workout_share_title"
+            android:gravity="center"
+            android:text="@string/seven_minute_workout_completed"
+            android:textColor="@color/gray_workout_subtext_color"
+            android:textSize="@dimen/workout_log_static_text_view"
+            font:customFont="SohoGothicPro-Regular.otf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/workoutLogStaticTextView"
+            android:layout_marginLeft="@dimen/padding_workout_share_title"
+            android:layout_marginRight="@dimen/padding_workout_share_title"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:padding="@dimen/forum_nav_bar_padding">
+
+                <RelativeLayout
+                    android:id="@+id/workoutLogWorkoutOptionRelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/workoutLogWorkoutOptionSubTextView"
+                    android:padding="@dimen/forum_nav_bar_padding">
+
+                    <ImageView
+                        android:id="@+id/workoutLogWorkoutOptionImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/hexa_outline_gray" />
+
+                    <com.zenlabs.sevenminuteworkout.utils.FontTextView
+                        android:id="@+id/workoutLogWorkoutOptionTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/workout_subtext_size"
+                        font:customFont="SohoGothicPro-Regular.otf" />
+
+                </RelativeLayout>
+
+                <com.zenlabs.sevenminuteworkout.utils.FontTextView
+                    android:id="@+id/workoutLogWorkoutOptionSubTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:text="@string/workout_option"
+                    android:textColor="@color/gray_workout_subtext_color"
+                    android:textSize="@dimen/workout_log_sub_sub_text_size"
+                    font:customFont="SohoGothicPro-Regular.otf" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:padding="@dimen/forum_nav_bar_padding">
+
+                <RelativeLayout
+                    android:id="@+id/workoutLogCyclesCompRelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/workoutLogCyclesCompSubTextView"
+                    android:padding="@dimen/forum_nav_bar_padding">
+
+                    <ImageView
+                        android:id="@+id/workoutLogCyclesCompImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/hexa_outline_green" />
+
+                    <com.zenlabs.sevenminuteworkout.utils.FontTextView
+                        android:id="@+id/workoutLogCyclesCompTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/workout_subtext_size"
+                        font:customFont="SohoGothicPro-Regular.otf" />
+
+                </RelativeLayout>
+
+                <com.zenlabs.sevenminuteworkout.utils.FontTextView
+                    android:id="@+id/workoutLogCyclesCompSubTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:text="@string/cycles_completed"
+                    android:textColor="@color/gray_workout_subtext_color"
+                    android:textSize="@dimen/workout_log_sub_sub_text_size"
+                    font:customFont="SohoGothicPro-Regular.otf" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

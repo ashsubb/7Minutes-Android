@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray_blue_menu_background_color"
+    tools:context="com.zenlabs.sevenminuteworkout.activity.ReminderActivity">
+
+    <RelativeLayout
+        android:id="@+id/reminderActivityActionBarRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/dark_gray_blue_menu_background_color">
+
+        <com.zenlabs.sevenminuteworkout.utils.FontTextView
+            android:id="@+id/reminderScreenActionBarTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/new_alarm"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/action_bar_text_size"
+            font:customFont="SohoGothicPro-Bold.otf" />
+
+        <ImageView
+            android:id="@+id/reminderScreenActionBarBackImageView"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/padding_action_bar_icons"
+            android:src="@drawable/close_btn" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/reminderActivityTriColorView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_color_divider_h"
+        android:layout_below="@+id/reminderActivityActionBarRelativeLayout"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/red_menu_color" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/turk_green_menu_color" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/frog_green_menu_color" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/reminderActivityHourSpinnerRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reminderActivityTriColorView"
+        android:layout_marginTop="@dimen/reminder_screen_spiner_padding"
+        android:background="@color/lighter_gray_blue_menu_background_color">
+
+
+        <View
+            android:layout_width="@dimen/reminder_screen_spiner_selected_background_w"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_centerHorizontal="true"
+            android:background="@color/blue_button_color" />
+
+        <com.wefika.horizontalpicker.HorizontalPicker
+            android:id="@+id/reminderActivityHourSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:ellipsize="middle"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="2"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/reminder_screen_spiner_text_size"
+            font:customFont="SohoGothicPro-Regular.otf"
+            font:dividerSize="0dp"
+            font:sideItems="2"
+            font:values="@array/hour_values" />
+
+    </RelativeLayout>
+
+
+    <com.zenlabs.sevenminuteworkout.utils.FontTextView
+        android:id="@+id/reminderActivityHoursTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reminderActivityHourSpinnerRelativeLayout"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/set_hour"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/reminder_screen_set_text_size"
+        font:customFont="SohoGothicPro-Regular.otf" />
+
+    <RelativeLayout
+        android:id="@+id/reminderActivityMinutesSpinnerRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reminderActivityHoursTextView"
+        android:layout_marginTop="@dimen/reminder_screen_spiner_padding"
+        android:background="@color/lighter_gray_blue_menu_background_color">
+
+
+        <View
+            android:layout_width="@dimen/reminder_screen_spiner_selected_background_w"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_centerHorizontal="true"
+            android:background="@color/blue_button_color" />
+
+        <com.wefika.horizontalpicker.HorizontalPicker
+            android:id="@+id/reminderActivityMinutesSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:ellipsize="middle"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="2"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/reminder_screen_spiner_text_size"
+            font:customFont="SohoGothicPro-Regular.otf"
+            font:dividerSize="0dp"
+            font:sideItems="2"
+            font:values="@array/minute_values" />
+
+    </RelativeLayout>
+
+
+    <com.zenlabs.sevenminuteworkout.utils.FontTextView
+        android:id="@+id/reminderActivityMinutesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reminderActivityMinutesSpinnerRelativeLayout"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/set_minutes"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/reminder_screen_set_text_size"
+        font:customFont="SohoGothicPro-Regular.otf" />
+
+    <LinearLayout
+        android:id="@+id/reminderActivityAmPmLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_below="@+id/reminderActivityMinutesTextView"
+        android:layout_marginTop="@dimen/reminder_screen_spiner_padding"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.zenlabs.sevenminuteworkout.utils.FontTextView
+            android:id="@+id/reminderActivityAmTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/reminderActivityMinutesSpinnerRelativeLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:background="@color/lighter_gray_blue_menu_background_color"
+            android:tag="false"
+            android:text="@string/am"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/reminder_screen_spiner_text_size"
+            font:customFont="SohoGothicPro-Regular.otf" />
+
+        <com.zenlabs.sevenminuteworkout.utils.FontTextView
+            android:id="@+id/reminderActivityPmTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/reminderActivityMinutesSpinnerRelativeLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/pm"
+            android:background="@color/lighter_gray_blue_menu_background_color"
+            android:tag="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/reminder_screen_spiner_text_size"
+            font:customFont="SohoGothicPro-Regular.otf" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reminderActivityButtonsLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.zenlabs.sevenminuteworkout.utils.FontButton
+            android:id="@+id/reminderActivityDeleteButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/pink_button_selector"
+            android:paddingBottom="@dimen/padding_action_bar"
+            android:paddingTop="@dimen/padding_action_bar"
+            android:text="@string/delete"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/action_bar_text_size"
+            font:customFont="SohoGothicPro-Regular.otf" />
+
+        <com.zenlabs.sevenminuteworkout.utils.FontButton
+            android:id="@+id/reminderActivitySaveButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/blue_button_selector"
+            android:paddingBottom="@dimen/padding_action_bar"
+            android:paddingTop="@dimen/padding_action_bar"
+            android:text="@string/save_alarm"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/action_bar_text_size"
+            font:customFont="SohoGothicPro-Regular.otf" />
+
+    </LinearLayout>
+
+</RelativeLayout>

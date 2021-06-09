@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.roomorama.caldroid.CellView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/calendar_tv"
+    android:layout_width="match_parent"
+    android:textSize="@dimen/cell_text_size"
+    android:layout_height="match_parent"
+    style="?styleCaldroidNormalCell"/>
+
+<!-- From: file:/Volumes/Macintosh%20HD%202/Huni/Projects%20Adnroid/7minuteworkout/7MinuteWorkout/caldroid/src/main/res/layout/normal_date_cell.xml -->

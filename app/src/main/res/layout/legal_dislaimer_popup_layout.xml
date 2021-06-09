@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent_black_color"
+    android:orientation="vertical">
+
+    <com.zenlabs.sevenminuteworkout.utils.FontTextView
+        android:id="@+id/legalDislaimerPopUpTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_action_bar"
+        android:layout_marginTop="@dimen/padding_action_bar"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/legal_disclaimer"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/action_bar_text_size"
+        font:customFont="SohoGothicPro-Bold.otf" />
+
+    <com.zenlabs.sevenminuteworkout.utils.FontTextView
+        android:id="@+id/legalDislaimerPopUpTextTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_action_bar"
+        android:layout_marginLeft="@dimen/padding_action_bar"
+        android:layout_marginRight="@dimen/padding_action_bar"
+        android:layout_marginTop="@dimen/padding_action_bar"
+        android:gravity="center"
+        android:text="@string/legal_disclaimer_text"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/legal_dislaimer_text_size"
+        font:customFont="SohoGothicPro-Regular.otf" />
+
+    <com.zenlabs.sevenminuteworkout.utils.FontButton
+        android:id="@+id/legalDislaimerPopUpOkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/padding_action_bar"
+        android:layout_marginTop="@dimen/padding_action_bar"
+        android:background="@drawable/blue_button_selector"
+        android:paddingBottom="@dimen/padding_action_bar"
+        android:paddingLeft="@dimen/button_padding_lr"
+        android:paddingRight="@dimen/button_padding_lr"
+        android:paddingTop="@dimen/padding_action_bar"
+        android:text="@string/ok"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/action_bar_text_size"
+        font:customFont="SohoGothicPro-Regular.otf" />
+
+</LinearLayout>

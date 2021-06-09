@@ -1,0 +1,3 @@
+int drawable kp_activity_indicator 0x7f020000
+int drawable kp_cancel_video 0x7f020001
+int drawable kp_play_video 0x7f020002

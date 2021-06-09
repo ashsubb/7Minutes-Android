@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zenlabs.sevenminuteworkout.activity.ExerciseInfoActivity">
+
+    <RelativeLayout
+        android:id="@+id/exerciseInfoScreenActionBarRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/dark_gray_blue_menu_background_color">
+
+        <com.zenlabs.sevenminuteworkout.utils.FontTextView
+            android:id="@+id/exerciseInfoScreeActionBarTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/dark_gray_blue_menu_background_color"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/action_bar_text_size"
+            font:customFont="SohoGothicPro-Bold.otf" />
+
+        <ImageView
+            android:id="@+id/exerciseInfoScreenActionBarBackImageView"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/padding_action_bar_icons"
+            android:src="@drawable/close_btn" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/exerciseInfoScreenTriColorLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_color_divider_h"
+        android:layout_below="@+id/exerciseInfoScreenActionBarRelativeLayout"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/red_menu_color" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/turk_green_menu_color" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/frog_green_menu_color" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/exerciseInfoScreenScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/exerciseInfoScreenTriColorLinearLayout"
+        android:background="@android:color/white"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.zenlabs.sevenminuteworkout.utils.FontTextView
+                android:id="@+id/exerciseInfoScreenPreparationTextView"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/exercise_info_padding"
+                android:layout_marginRight="@dimen/exercise_info_padding"
+                android:layout_marginTop="@dimen/exercise_info_padding"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="@string/preparation"
+                android:textColor="@color/blue_button_color"
+                android:textSize="@dimen/exercise_info_titles_text_size"
+                font:customFont="SohoGothicPro-Bold.otf" />
+
+            <com.zenlabs.sevenminuteworkout.utils.FontTextView
+                android:id="@+id/exerciseInfoScreenPreparationDescTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/exercise_info_padding"
+                android:layout_marginRight="@dimen/exercise_info_padding"
+                android:gravity="center|left"
+                android:text="lskdflnsdjkfkjbghbdfhbhvbhjdbhbfhgbf"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/exercise_info_desc_text_size"
+                font:customFont="SohoGothicPro-Regular.otf" />
+
+            <com.zenlabs.sevenminuteworkout.utils.FontTextView
+                android:id="@+id/exerciseInfoScreenExecutionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/exercise_info_padding"
+                android:layout_marginRight="@dimen/exercise_info_padding"
+                android:layout_marginTop="@dimen/exercise_info_padding"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="@string/execution"
+                android:textColor="@color/blue_button_color"
+                android:textSize="@dimen/exercise_info_titles_text_size"
+                font:customFont="SohoGothicPro-Bold.otf" />
+
+            <com.zenlabs.sevenminuteworkout.utils.FontTextView
+                android:id="@+id/exerciseInfoScreenExecutionDescTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/exercise_info_padding"
+                android:layout_marginRight="@dimen/exercise_info_padding"
+                android:gravity="center|left"
+                android:text="lskdflnsdjkfkjbghbdfhbhvbhjdbhbfhgbf"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/exercise_info_desc_text_size"
+                font:customFont="SohoGothicPro-Regular.otf" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/exercise_info_webview_h">
+
+                <WebView
+                    android:id="@+id/exerciseInfoScreenWebView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/exercise_info_webview_h"
+                    android:layout_margin="@dimen/exercise_info_padding" />
+
+                <View
+                    android:id="@+id/exerciseInfoScreenWebViewClickableView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/exercise_info_webview_h"
+                    android:layout_margin="@dimen/exercise_info_padding"  />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

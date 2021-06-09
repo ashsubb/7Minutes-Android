@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:background="@android:color/white"
+    android:visibility="invisible"
+    android:layout_height="?android:attr/actionBarSize">
+
+    <com.zenlabs.sevenminuteworkout.utils.FontTextView
+        android:id="@+id/workoutExerciseListItemIndexTextView"
+        android:layout_width="?android:attr/actionBarSize"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="1"
+        android:background="@color/gray_list_item_nr_color"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/exercise_list_item_text_size"
+        font:customFont="SohoGothicPro-Regular.otf" />
+
+    <com.zenlabs.sevenminuteworkout.utils.FontTextView
+        android:id="@+id/workoutExerciseListItemTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/exercise_list_item_padding"
+        android:layout_toRightOf="@+id/workoutExerciseListItemIndexTextView"
+        android:layout_centerVertical="true"
+        android:gravity="center|left"
+        android:singleLine="true"
+        android:layout_toLeftOf="@+id/workoutExerciseListItemPlayImageView"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/exercise_list_item_text_size"
+        font:customFont="SohoGothicPro-Regular.otf" />
+
+    <ImageView
+        android:id="@+id/workoutExerciseListItemPlayImageView"
+        android:layout_width="?android:attr/actionBarSize"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/exercise_list_item_icon_padding"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/play_icon"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue_button_color"/>
+
+</RelativeLayout>

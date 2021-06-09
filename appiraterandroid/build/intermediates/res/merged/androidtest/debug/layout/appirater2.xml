@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/send_us"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/send_us"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/love_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/love_message" />
+
+    <Button
+        android:id="@+id/sure"
+        style="@style/appiratorButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="@string/sure" />
+
+    <Button
+        android:id="@+id/maybe"
+        style="@style/appiratorButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="@string/maybe" />
+
+    <Button
+        android:id="@+id/no_thanks"
+        style="@style/appiratorButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="@string/no_thanks"
+        android:textStyle="bold" />
+
+</LinearLayout><!-- From: file:/Volumes/Macintosh%20HD%202/Huni/Projects%20Adnroid/7minuteworkout/7MinuteWorkout/AppiraterAndroid/res/layout/appirater2.xml --><!-- From: file:/Volumes/Macintosh%20HD%202/Huni/Projects%20Adnroid/7minuteworkout/7MinuteWorkout/AppiraterAndroid/build/intermediates/bundles/debug/res/layout/appirater2.xml -->

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/calendar_gridview"
+    style="?styleCaldroidGridView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:drawSelectorOnTop="false"
+    android:listSelector="@android:color/transparent"
+    android:numColumns="7"
+    android:stretchMode="columnWidth" />
+<!-- From: file:/Volumes/Macintosh%20HD%202/Huni/Projects%20Adnroid/7minuteworkout/7MinuteWorkout/caldroid/src/main/res/layout/date_grid_fragment.xml --><!-- From: file:/Volumes/Macintosh%20HD%202/Huni/Projects%20Adnroid/7minuteworkout/7MinuteWorkout/caldroid/build/intermediates/bundles/debug/res/layout/date_grid_fragment.xml -->

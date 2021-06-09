@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="rate_message">Do you love %s ?</string>
+     <string name="hi_there">Hi, there!</string>
+    <string name="love_it">Love it!</string>
+    <string name="its_ok">it\'s OK</string>
+    <string name="hate_it">Hate it!</string>
+    <string name="love_message">Your love makes us work harder!\nPlease support us by reviewing our app! Thanks!</string>
+	 <string name="send_us">Send use some love!</string>
+	<string name="sure">Sure!</string>
+	<string name="maybe">Maybe Later</string>
+	<string name="no_thanks">No, Thanks</string>
+	 <string name="opinion_message">We love our users! We want to work hard to make you happy! Please send us feedback so we can help make %s better!</string>
+ <string name="your_opinion">Your opinion matters!</string>
+ <string name="not_now">Not now</string>
+  <string name="send">Send Feedback!</string>
+</resources>

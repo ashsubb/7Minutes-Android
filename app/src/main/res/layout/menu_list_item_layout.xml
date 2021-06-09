@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/dark_gray_blue_menu_background_color"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/menu_list_item_padding"
+    android:paddingTop="@dimen/menu_list_item_padding">
+
+    <ImageView
+        android:id="@+id/menuListItemIconImageView"
+        android:layout_width="@dimen/menu_list_item_image_size"
+        android:layout_height="@dimen/menu_list_item_image_size"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/padding_action_bar"
+        android:scaleType="fitCenter" />
+
+    <com.zenlabs.sevenminuteworkout.utils.FontTextView
+        android:id="@+id/menuListItemTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/padding_action_bar"
+        android:layout_toLeftOf="@+id/menuListItemRightInformationFrameLayout"
+        android:layout_toRightOf="@+id/menuListItemIconImageView"
+        android:gravity="center|left"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/menu_list_item_text_size"
+        font:customFont="SohoGothicPro-Regular.otf" />
+
+    <FrameLayout
+        android:id="@+id/menuListItemRightInformationFrameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/padding_action_bar"
+        android:layout_marginRight="@dimen/padding_action_bar">
+
+        <com.zenlabs.sevenminuteworkout.utils.FontTextView
+            android:id="@+id/menuListItemReminderTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_action_bar"
+            android:layout_toLeftOf="@+id/menuListItemSwitchImageView"
+            android:gravity="center|left"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/menu_list_item_text_size"
+            font:customFont="SohoGothicPro-Regular.otf" />
+
+        <ImageView
+            android:id="@+id/menuListItemSwitchImageView"
+            android:layout_width="@dimen/menu_list_item_switch_w"
+            android:layout_height="@dimen/menu_list_item_switch_h"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/sw_off"
+            android:tag="false"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</RelativeLayout>

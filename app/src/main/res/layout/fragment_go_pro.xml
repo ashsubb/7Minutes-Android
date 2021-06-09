@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/goProScreenMainLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/dark_gray_blue_menu_background_color">
+
+        <com.zenlabs.sevenminuteworkout.utils.FontTextView
+            android:id="@+id/goProScreenActionBarTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/dark_gray_blue_menu_background_color"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/ultimate_warrior_packg"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/action_bar_text_size"
+            font:customFont="SohoGothicPro-Bold.otf" />
+
+        <ImageView
+            android:id="@+id/menuScreenActionBarBackImageView"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/padding_action_bar_icons"
+            android:src="@drawable/close_btn" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_color_divider_h"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/red_menu_color" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/turk_green_menu_color" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/frog_green_menu_color" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/go_pro_bg" />
+
+        <com.zenlabs.sevenminuteworkout.utils.FontButton
+            android:id="@+id/goProScreenBuyOptionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/blue_button_selector"
+            android:textSize="@dimen/action_bar_text_size"
+            font:customFont="SohoGothicPro-Regular.otf" />
+
+        <com.zenlabs.sevenminuteworkout.utils.FontTextView
+            android:id="@+id/goProScreenOrJustTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/goProScreenBuyOptionButton"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/forum_nav_bar_padding"
+            android:layout_marginTop="@dimen/forum_nav_bar_padding"
+            android:text="@string/or_just_this_one_thing"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/go_pro_or_just_text_size"
+            font:customFont="SohoGothicPro-Bold.otf" />
+
+        <com.zenlabs.sevenminuteworkout.utils.FontButton
+            android:id="@+id/goProScreenUltimateWarriorButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_above="@+id/goProScreenOrJustTextView"
+            android:background="@drawable/green_button_selector"
+            android:text="@string/buy_ultimate_warriror_now_monney"
+            android:textSize="@dimen/action_bar_text_size"
+            font:customFont="SohoGothicPro-Regular.otf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/goProScreenUltimateWarriorButton"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.zenlabs.sevenminuteworkout.utils.FontTextView
+                android:id="@+id/goProTitleListTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/padding_action_bar"
+                android:paddingRight="@dimen/padding_action_bar"
+                android:text="@string/go_pro_desc_text_ultimate"
+                android:textColor="@color/green_go_pro_text_title_color"
+                android:textSize="@dimen/action_bar_text_size"
+                font:customFont="SohoGothicPro-Regular.otf" />
+
+            <LinearLayout
+                android:id="@+id/goProUltimateWarListItemLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/go_pro_check_items_paddings"
+                android:layout_marginRight="@dimen/go_pro_check_items_paddings"
+                android:layout_marginTop="@dimen/go_pro_padding_items"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="@dimen/go_pro_check_icon_size"
+                    android:layout_height="@dimen/go_pro_check_icon_size"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/green_check" />
+
+                <com.zenlabs.sevenminuteworkout.utils.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/padding_action_bar"
+                    android:gravity="center|left"
+                    android:text="@string/all_the_workouts"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/action_bar_text_size"
+                    font:customFont="SohoGothicPro-Regular.otf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/go_pro_check_items_paddings"
+                android:layout_marginRight="@dimen/go_pro_check_items_paddings"
+                android:layout_marginTop="@dimen/go_pro_padding_items"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/go_pro_check_icon_size"
+                    android:layout_height="@dimen/go_pro_check_icon_size"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/green_check" />
+
+                <com.zenlabs.sevenminuteworkout.utils.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/padding_action_bar"
+                    android:gravity="center|left"
+                    android:text="@string/workout_log"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/action_bar_text_size"
+                    font:customFont="SohoGothicPro-Regular.otf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/go_pro_check_items_paddings"
+                android:layout_marginRight="@dimen/go_pro_check_items_paddings"
+                android:layout_marginTop="@dimen/go_pro_padding_items"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/go_pro_check_icon_size"
+                    android:layout_height="@dimen/go_pro_check_icon_size"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/green_check" />
+
+                <com.zenlabs.sevenminuteworkout.utils.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/padding_action_bar"
+                    android:gravity="center|left"
+                    android:text="@string/multiple_circuits"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/action_bar_text_size"
+                    font:customFont="SohoGothicPro-Regular.otf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/go_pro_check_items_paddings"
+                android:layout_marginRight="@dimen/go_pro_check_items_paddings"
+                android:layout_marginTop="@dimen/go_pro_padding_items"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/go_pro_check_icon_size"
+                    android:layout_height="@dimen/go_pro_check_icon_size"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/green_check" />
+
+                <com.zenlabs.sevenminuteworkout.utils.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/padding_action_bar"
+                    android:gravity="center|left"
+                    android:text="@string/adjust_rest_time"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/action_bar_text_size"
+                    font:customFont="SohoGothicPro-Regular.otf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/go_pro_check_items_paddings"
+                android:layout_marginRight="@dimen/go_pro_check_items_paddings"
+                android:layout_marginTop="@dimen/go_pro_padding_items"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/go_pro_check_icon_size"
+                    android:layout_height="@dimen/go_pro_check_icon_size"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/green_check" />
+
+                <com.zenlabs.sevenminuteworkout.utils.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/padding_action_bar"
+                    android:gravity="center|left"
+                    android:text="@string/adjust_exercise_time"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/action_bar_text_size"
+                    font:customFont="SohoGothicPro-Regular.otf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/go_pro_check_items_paddings"
+                android:layout_marginRight="@dimen/go_pro_check_items_paddings"
+                android:layout_marginTop="@dimen/go_pro_padding_items"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/go_pro_check_icon_size"
+                    android:layout_height="@dimen/go_pro_check_icon_size"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/green_check" />
+
+                <com.zenlabs.sevenminuteworkout.utils.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/padding_action_bar"
+                    android:gravity="center|left"
+                    android:text="@string/remove_ads"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/action_bar_text_size"
+                    font:customFont="SohoGothicPro-Regular.otf" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

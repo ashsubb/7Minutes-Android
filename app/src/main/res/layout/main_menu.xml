@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainMenuScreenDrawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/dark_gray_blue_menu_background_color"
+    android:baselineAligned="false"
+    android:divider="@android:color/transparent"
+    android:dividerHeight="0dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/dark_gray_blue_menu_background_color">
+
+        <com.zenlabs.sevenminuteworkout.utils.FontTextView
+            android:id="@+id/menuScreenActionBarTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/dark_gray_blue_menu_background_color"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/settings"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/action_bar_text_size"
+            font:customFont="SohoGothicPro-Bold.otf" />
+
+        <ImageView
+            android:id="@+id/menuScreenActionBarBackImageView"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/back_arrow"
+            android:padding="@dimen/padding_action_bar_icons" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_color_divider_h"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/red_menu_color"
+            android:layout_height="match_parent"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/turk_green_menu_color"
+            android:layout_height="match_parent"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/frog_green_menu_color"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/menuScreenListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/padding_action_bar"
+        android:layout_marginRight="@dimen/padding_action_bar"
+        android:background="@color/dark_gray_blue_menu_background_color"
+        android:choiceMode="singleChoice"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:divider="@color/dark_gray__menu_divider_color"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent" />
+
+</LinearLayout>

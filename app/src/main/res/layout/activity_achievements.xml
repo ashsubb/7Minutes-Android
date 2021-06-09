@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zenlabs.sevenminuteworkout.activity.AchievementsActivity">
+
+    <RelativeLayout
+        android:id="@+id/achievementsActivityActionBarRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/dark_gray_blue_menu_background_color">
+
+        <com.zenlabs.sevenminuteworkout.utils.FontTextView
+            android:id="@+id/achievementsActivityActionBarTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/dark_gray_blue_menu_background_color"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/achievements"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/action_bar_text_size"
+            font:customFont="SohoGothicPro-Bold.otf" />
+
+        <ImageView
+            android:id="@+id/achievementsActivityActionBarBackImageView"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/padding_action_bar_icons"
+            android:src="@drawable/close_btn" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/achievementsActivityTricolorLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_color_divider_h"
+        android:layout_below="@+id/achievementsActivityActionBarRelativeLayout"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/red_menu_color" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/turk_green_menu_color" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/frog_green_menu_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/achievementsActivityTricolorLinearLayout"
+        android:background="@color/black_gray_achievements_list_bg_color"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/achievemetns_top_bg" />
+
+            <com.zenlabs.sevenminuteworkout.utils.PercentageCircle
+                android:id="@+id/achievementsActivityFirstInnerPercentageCircle"
+                android:clickable="false"
+                android:layout_width="@dimen/achievements_inner_circle_size"
+                android:layout_height="@dimen/achievements_inner_circle_size"
+                android:layout_centerInParent="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+            <com.zenlabs.sevenminuteworkout.utils.PercentageCircle
+                android:id="@+id/achievementsActivityFirstBorderPercentageCircle"
+                android:clickable="false"
+                android:layout_width="@dimen/achievements_border_circle_size"
+                android:layout_height="@dimen/achievements_border_circle_size"
+                android:layout_centerInParent="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+            <com.zenlabs.sevenminuteworkout.utils.PercentageCircle
+                android:id="@+id/achievementsActivitySecondInnerPercentageCircle"
+                android:clickable="false"
+                android:layout_width="@dimen/achievements_inner_circle_size"
+                android:layout_height="@dimen/achievements_inner_circle_size"
+                android:layout_centerInParent="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+            <com.zenlabs.sevenminuteworkout.utils.PercentageCircle
+                android:id="@+id/achievementsActivitySecondtBorderPercentageCircle"
+                android:clickable="false"
+                android:layout_width="@dimen/achievements_border_circle_size"
+                android:layout_height="@dimen/achievements_border_circle_size"
+                android:layout_centerInParent="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+            <com.zenlabs.sevenminuteworkout.utils.FontTextView
+                android:id="@+id/achievementsActivityPercentTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/achievements_percent_text_size"
+                font:customFont="SohoGothicPro-Bold.otf" />
+
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/achievementsActivityListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/padding_action_bar"
+            android:layout_marginRight="@dimen/padding_action_bar"
+            android:layout_weight="0.6"
+            android:choiceMode="singleChoice"
+            android:divider="@color/blue_button_color"
+            android:dividerHeight="1dp"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:listSelector="@android:color/transparent"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+    </LinearLayout>
+
+</RelativeLayout>

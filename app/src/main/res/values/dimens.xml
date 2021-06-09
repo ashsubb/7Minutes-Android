@@ -1,0 +1,138 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Splash-->
+    <dimen name="splash_loading_image_size">200dp</dimen>
+    <dimen name="splash_title_pading">25dp</dimen>
+    <dimen name="splash_title_text_size">32sp</dimen>
+    <dimen name="splash_bottom_text_size">17sp</dimen>
+
+    <!-- Menu-Main-->
+    <dimen name="padding_action_bar">10dp</dimen>
+    <dimen name="padding_action_bar_icons">17dp</dimen>
+    <dimen name="action_bar_text_size">18sp</dimen>
+    <dimen name="menu_color_divider_h">3dp</dimen>
+    <dimen name="menu_list_item_image_size">15dp</dimen>
+    <dimen name="menu_list_item_text_size">17sp</dimen>
+    <dimen name="menu_list_item_padding">10dp</dimen>
+    <dimen name="menu_list_item_switch_w">60dp</dimen>
+    <dimen name="menu_list_item_switch_h">25dp</dimen>
+    <dimen name="button_padding_lr">35dp</dimen>
+    <dimen name="legal_dislaimer_text_size">14sp</dimen>
+    <dimen name="slide_text_size">20sp</dimen>
+
+    <!-- forum-->
+    <dimen name="forum_nav_bar_padding">5dp</dimen>
+
+    <!-- GoPro-->
+    <dimen name="go_pro_padding_items">15dp</dimen>
+    <dimen name="go_pro_check_icon_size">25dp</dimen>
+    <dimen name="go_pro_check_items_paddings">70dp</dimen>
+    <dimen name="go_pro_or_just_text_size">12sp</dimen>
+
+    <!-- Reminder-->
+    <dimen name="reminder_screen_spiner_padding">15dp</dimen>
+    <dimen name="reminder_screen_spiner_text_size">23sp</dimen>
+    <dimen name="reminder_screen_set_text_size">14sp</dimen>
+    <dimen name="reminder_screen_spiner_selected_background_w">50dp</dimen>
+
+    <!-- Home-->
+    <dimen name="home_screen_start_button_padding_l">15dp</dimen>
+    <dimen name="home_screen_start_button_padding_b">20dp</dimen>
+    <dimen name="home_screen_bottom_view_container_h">70dp</dimen>
+    <dimen name="home_screen_start_button_h">65dp</dimen>
+    <dimen name="home_screen_start_button_w">55dp</dimen>
+    <dimen name="home_screen_buttonm_views_dif_size">-21dp</dimen>
+    <dimen name="home_screen_bottom_view_size">50dp</dimen>
+    <dimen name="home_screen_indicator_size">6dp</dimen>
+    <dimen name="home_screen_indicator_round_size">3dp</dimen>>
+    <dimen name="home_screen_three_left_slide_button_w">110dp</dimen>
+    <dimen name="home_screen_three_left_slide_button_icon_padding">8dp</dimen>
+    <dimen name="home_screen_three_left_slide_button_text_padding">1dp</dimen>
+    <dimen name="home_screen_three_left_slide_button_text_size">10sp</dimen>
+    <dimen name="home_screen_three_left_slide_arrow_button_padding">12dp</dimen>
+    <dimen name="home_screen_bottom_view_text_size">17sp</dimen>
+
+    <!-- Workout List Item-->
+
+    <dimen name="exercise_list_item_text_size">17sp</dimen>
+    <dimen name="exercise_list_item_padding">10dp</dimen>
+    <dimen name="exercise_list_item_icon_padding">13dp</dimen>
+
+    <!-- Exercise Info-->
+    <dimen name="exercise_info_padding">15dp</dimen>
+    <dimen name="exercise_info_titles_text_size">20sp</dimen>
+    <dimen name="exercise_info_desc_text_size">15sp</dimen>
+    <dimen name="exercise_info_webview_h">230dp</dimen>
+
+    <!-- Workout-->
+    <dimen name="workout_item_padding">7dp</dimen>
+    <dimen name="workout_bottom_text_size">11sp</dimen>
+    <dimen name="workout_top_text_size">19sp</dimen>
+    <dimen name="workout_see_intructions_text_size">15sp</dimen>
+    <dimen name="workout_star_pause_button_h">65dp</dimen>
+    <dimen name="workout_star_pause_button_w">55dp</dimen>
+    <dimen name="workout_navigationbar_padding">17dp</dimen>
+    <dimen name="workout_see_intructions_image_size">17dp</dimen>
+    <dimen name="workout_navigationbar_button_padding">9dp</dimen>
+    <dimen name="workout_rest_count_down_text_size">15sp</dimen>
+    <dimen name="workout_middle_text_size">60sp</dimen>
+    <dimen name="admob_banner_size">50dp</dimen>
+
+
+    <!-- Information Dialog-->
+    <dimen name="information_dialog_button_text_size">17sp</dimen>
+    <dimen name="information_dialog_paddings">12dp</dimen>
+    <dimen name="information_dialog_title_text_size">21sp</dimen>
+
+    !-- Workout Completed-->
+    <dimen name="workout_completed_trohy_size">20dp</dimen>
+    <dimen name="workout_share_title_text_size">17sp</dimen>
+    <dimen name="workout_summary_text_size">25sp</dimen>
+    <dimen name="workout_subtext_size">19sp</dimen>
+    <dimen name="workout_sub_sub_text_size">15sp</dimen>
+    <dimen name="workout_share_icons_padding">15dp</dimen>
+    <dimen name="padding_workout_share_title">30dp</dimen>
+
+    <!-- Adjust Workout-->
+    <dimen name="adjust_workout_sub_titles_size">17sp</dimen>
+    <dimen name="adjust_workout_text_in_hexa_size">22sp</dimen>
+    <dimen name="adjust_workout_hexa_padding">10dp</dimen>
+
+    <!-- Workout Log-->
+    <dimen name="workout_log_date_text_size">17sp</dimen>
+    <dimen name="workout_log_static_text_view">15sp</dimen>
+    <dimen name="workout_log_sub_sub_text_size">12sp</dimen>
+    <dimen name="workout_log_item_size">200dp</dimen>
+
+    <!-- Prefield Screenshot-->
+    <dimen name="prefield_text_size">13sp</dimen>
+    <dimen name="prefield_screenshoot_size">300dp</dimen>
+
+    <!-- Achiecements-->
+    <dimen name="achievements_title_text_size">17sp</dimen>
+    <dimen name="achievements_sub_title_text_size">14sp</dimen>
+    <dimen name="achievements_badge_h">80dp</dimen>
+    <dimen name="achievements_badge_w">70dp</dimen>
+    <dimen name="achievements_inner_circle_size">175dp</dimen>
+    <dimen name="achievements_border_circle_size">180dp</dimen>
+    <dimen name="achievements_percent_text_size">15sp</dimen>
+
+    <!-- Rate me-->
+    <dimen name="medium_margin">30dp</dimen>
+    <dimen name="rate_dialog_top_lane_height">8dp</dimen>
+    <dimen name="small_margin">20dp</dimen>
+    <dimen name="button_padding_horizontal_rate_dialog">37dp</dimen>
+    <dimen name="button_padding_vertical_rate_dialog">12dp</dimen>
+    <dimen name="button_small_padding_horizontal_rate_dialog">17dp</dimen>
+    <dimen name="textSizeLarge">22sp</dimen>
+    <dimen name="textSizeMedium">20sp</dimen>
+    <dimen name="textSizeSmall">14sp</dimen>
+    <dimen name="textSizeExtraLarge">26sp</dimen>
+    <dimen name="textSizeNormal">17sp</dimen>
+
+
+</resources>

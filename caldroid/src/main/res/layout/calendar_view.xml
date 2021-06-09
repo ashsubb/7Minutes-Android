@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?styleCaldroidViewLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/calendar_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_color"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/calendar_view_margin"
+        android:paddingRight="@dimen/calendar_view_margin">
+
+        <Button
+            android:id="@+id/calendar_left_arrow"
+            style="?styleCaldroidLeftArrow" />
+
+        <TextView
+            android:id="@+id/calendar_month_year_textview"
+            style="?styleCaldroidMonthName"
+            android:textSize="@dimen/title_text_size" />
+
+        <Button
+            android:id="@+id/calendar_right_arrow"
+            style="?styleCaldroidRightArrow" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/weekday_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:background="@color/gray_color"
+        android:numColumns="7"
+        android:paddingLeft="@dimen/calendar_view_margin"
+        android:paddingRight="@dimen/calendar_view_margin"
+        android:stretchMode="columnWidth" />
+
+    <com.antonyt.infiniteviewpager.InfiniteViewPager
+        android:id="@+id/months_infinite_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/calendar_view_margin"
+        android:layout_marginRight="@dimen/calendar_view_margin"
+        android:background="@android:color/white" />
+
+</LinearLayout>

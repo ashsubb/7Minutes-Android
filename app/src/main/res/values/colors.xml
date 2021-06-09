@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="dark_gray_blue_menu_background_color">#2b3e42</color>
+    <color name="dark_dark_gray_blue_menu_background_color">#26363a</color>
+    <color name="lighter_gray_blue_menu_background_color">#2f464b</color>
+    <color name="dark_gray__menu_divider_color">#4e6165</color>
+    <color name="red_menu_color">#d84152</color>
+    <color name="turk_green_menu_color">#15aab0</color>
+    <color name="frog_green_menu_color">#b3d445</color>
+    <color name="selected_frog_green_menu_color">#a6c33f</color>
+    <color name="blue_button_color">#02b1b4</color>
+    <color name="blue_selected_button_color">#019294</color>
+    <color name="transparent_black_color">#85000000</color>
+    <color name="transparent_selected_button_black_color">#45000000</color>
+    <color name="transparent_button_black_color">#25000000</color>
+    <color name="green_go_pro_text_title_color">#1bb5bd</color>
+    <color name="pink_button_color">#f67280</color>
+    <color name="pink_selected_button_color">#c8606c</color>
+    <color name="gray_list_item_nr_color">#dcdcdc</color>
+    <color name="gray_information_popup_backround_color">#dad9d9</color>
+    <color name="blue_information_popup_text_color">#007aff</color>
+    <color name="purple_color">#6c5b7b</color>
+    <color name="gray_workout_bg_color">#f2f2f2</color>
+    <color name="gray_workout_subtext_color">#555555</color>
+    <color name="green_frog_color">#6ce72d</color>
+    <color name="red_light_color">#e50006</color>
+    <color name="black_gray_achievements_list_bg_color">#1a1f1f</color>
+    <color name="gray_achievements_text_color">#787878</color>
+    <color name="green_light_not_achievement">#02b1b4</color>
+    <color name="green_dark_not_achievement">#07999c</color>
+    <color name="green_light_achievement">#bedb39</color>
+    <color name="green_dark_achievement">#a9c234</color>
+    <color name="green_unlock">#78ce80</color>
+
+    <!-- Rate Me-->
+    <color name="orange">#f7941d</color>
+    <color name="green">#84bb3b</color>
+    <color name="green_pressed">#a0bf79</color>
+    <color name="red">#c41a1b</color>
+    <color name="red_pressed">#c66262</color>
+
+
+</resources>

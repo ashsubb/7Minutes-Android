@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/homeScreenMainBaseRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray_blue_menu_background_color">
+
+    <LinearLayout
+        android:id="@+id/homeScreenMainLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/homeScreenBottomContainerLayout"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/home_screen_buttonm_views_dif_size"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.5">
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/homeScreenViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="0dp"
+                android:overScrollMode="never"
+                android:visibility="gone" />
+
+            <RadioGroup
+                android:id="@+id/homeScreenPageIndicatorRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/forum_nav_bar_padding"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/homeScreenFlipLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <ImageView
+                    android:id="@+id/homeScreenFlip1ImageView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ex1_bg_image_1"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/homeScreenFlip2ImageView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ex1_bg_image_2"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/homeScreenFlip3ImageView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ex1_bg_image_3"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/homeScreenFlip4ImageView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ex1_bg_image_4"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/homeScreenFlip5ImageView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ex1_bg_image_5"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <!--Right side buttons-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0dp"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:id="@+id/homeScreenExerciseContainerLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|right">
+
+                    <include layout="@layout/home_screen_exercise_buttons_layout" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/homeScreenRestContainerLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|right">
+
+                    <include layout="@layout/home_screen_rest_buttons_layout" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/homeScreenCircuitContainerLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|right">
+
+                    <include layout="@layout/home_screen_circuit_buttons_layout" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/homeScreenListViewContainerLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5.5"
+            android:orientation="vertical"
+            android:overScrollMode="never">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="0dp"
+                android:fillViewport="true"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/homeScreenListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/homeScreenBottomContainerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_screen_bottom_view_container_h"
+        android:layout_alignParentBottom="true"
+        android:tag="0"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_screen_bottom_view_size"
+            android:layout_alignParentBottom="true"
+            android:background="@color/blue_button_color" />
+
+        <RelativeLayout
+            android:id="@+id/homeScreenBottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_screen_bottom_view_size"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/home_screen_bottom_view_size"
+            android:layout_toRightOf="@+id/homeScreenStartExerciseImageView"
+            android:background="@color/blue_button_color">
+
+            <ImageView
+                android:id="@+id/homeScreenBottomTextBackgroundImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.8"
+                android:background="@drawable/slide_to_start_text_background4"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/homeScreenBottomTextImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/slide_to_start_text"
+                android:scaleType="fitCenter"
+                android:visibility="gone" />
+
+            <com.zenlabs.sevenminuteworkout.utils.SliderView
+                android:id="@+id/slide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/blue_button_color"
+                android:gravity="center" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/homeScreenStartExerciseImageView"
+            android:layout_width="@dimen/home_screen_start_button_w"
+            android:layout_height="@dimen/home_screen_start_button_h"
+            android:layout_alignParentTop="true"
+            android:visibility="invisible" />
+
+        <com.zenlabs.sevenminuteworkout.utils.FontTextView
+            android:id="@+id/homeScreenUnlockTextView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_screen_bottom_view_size"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:background="@color/green_unlock"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/unlock_099"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/slide_text_size"
+            android:visibility="gone"
+            font:customFont="SohoGothicPro-Regular.otf" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

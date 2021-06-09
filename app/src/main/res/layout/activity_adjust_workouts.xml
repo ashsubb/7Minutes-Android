@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray_blue_menu_background_color"
+    tools:context="com.zenlabs.sevenminuteworkout.activity.AdjustWorkoutsActivity">
+
+    <RelativeLayout
+        android:id="@+id/adjustWorkoutActivityActionBarRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/dark_gray_blue_menu_background_color">
+
+        <com.zenlabs.sevenminuteworkout.utils.FontTextView
+            android:id="@+id/adjustWorkoutActivityActionBarTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/dark_gray_blue_menu_background_color"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/adjust_workout"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/action_bar_text_size"
+            font:customFont="SohoGothicPro-Bold.otf" />
+
+        <ImageView
+            android:id="@+id/adjustWorkoutActionBarBackImageView"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/padding_action_bar_icons"
+            android:src="@drawable/close_btn" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/adjustWorkoutActivityTricolorLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_color_divider_h"
+        android:layout_below="@+id/adjustWorkoutActivityActionBarRelativeLayout"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/red_menu_color" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/turk_green_menu_color" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/frog_green_menu_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adjustWorkoutActivitySaveButton"
+        android:layout_below="@+id/adjustWorkoutActivityTricolorLinearLayout"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:id="@+id/adjustWorkoutActivityFirstItemRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="invisible">
+
+            <!--<include-->
+            <!--android:id="@+id/adjustWorkoutActivityFirstItemLayout"-->
+            <!--layout="@layout/adjust_workout_item_layout" />-->
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/adjustWorkoutActivitySecondItemRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="invisible">
+
+            <!--<include-->
+            <!--android:id="@+id/adjustWorkoutActivitySecondItemLayout"-->
+            <!--layout="@layout/adjust_workout_item_layout" />-->
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/adjustWorkoutActivityThirdItemRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="invisible">
+
+            <!--<include-->
+            <!--android:id="@+id/adjustWorkoutActivityThirdItemLayout"-->
+            <!--layout="@layout/adjust_workout_item_layout" />-->
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.zenlabs.sevenminuteworkout.utils.FontButton
+        android:id="@+id/adjustWorkoutActivitySaveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        android:background="@drawable/blue_button_selector"
+        android:text="@string/save_my_settings"
+        android:textSize="@dimen/action_bar_text_size"
+        font:customFont="SohoGothicPro-Regular.otf" />
+
+</RelativeLayout>

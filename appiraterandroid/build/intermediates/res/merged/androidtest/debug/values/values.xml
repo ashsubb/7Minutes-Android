@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Volumes/Macintosh%20HD%202/Huni/Projects%20Adnroid/7minuteworkout/7MinuteWorkout/AppiraterAndroid/build/intermediates/bundles/debug/res/values/values.xml -->
+    <eat-comment/>
+    <bool name="appirator_test_mode">false</bool>
+    <color name="appirator_button_end_color">#ff2f6699</color>
+    <color name="appirator_button_start_color">#ff449def</color>
+    <color name="appirator_button_text_color">#ffffffff</color>
+    <integer name="appirator_days_before_reminding">3</integer>
+    <integer name="appirator_days_until_prompt">30</integer>
+    <integer name="appirator_launches_until_prompt">15</integer>
+    <string name="appirator_app_title">Your App Name</string>
+    <string name="appirator_market_url">market://details?id=%s</string>
+    <string name="hate_it">Hate it!</string>
+    <string name="hi_there">Hi, there!</string>
+    <string name="its_ok">it\'s OK</string>
+    <string name="love_it">Love it!</string>
+    <string name="love_message">Your love makes us work harder!\nPlease support us by reviewing our app! Thanks!</string>
+    <string name="maybe">Maybe Later</string>
+    <string name="no_thanks">No, Thanks</string>
+    <string name="not_now">Not now</string>
+    <string name="opinion_message">We love our users! We want to work hard to make you happy! Please send us feedback so we can help make %s better!</string>
+    <string name="rate_message">Do you love %s ?</string>
+    <string name="send">Send Feedback!</string>
+    <string name="send_us">Send use some love!</string>
+    <string name="sure">Sure!</string>
+    <string name="your_opinion">Your opinion matters!</string>
+    <style name="appiratorButton" parent="android:Widget.Button">
+        <item name="android:background">@drawable/button_appirator</item>
+        <item name="android:textColor">@color/appirator_button_text_color</item>
+    </style>
+</resources>

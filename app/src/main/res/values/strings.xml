@@ -1,0 +1,271 @@
+<resources>
+
+    <string name="app_name">7Min Workout</string>
+
+    <string name="no_intertnet_connections">No Internet Connection!</string>
+    <string name="pls_check_intertnet_connections">Please check your internet connection!</string>
+    <!-- Settings-->
+    <string name="action_settings">Settings</string>
+
+    <!-- Splash-->
+    <string name="splash_title">7 MINUTE\nWORKOUT</string>
+    <string name="splash_bottom_text">initializing interface</string>
+    <string name="title_activity_splash">SplashActivity</string>
+
+    <!-- Main-Menu-->
+    <string name="original">Original</string>
+    <string name="settings">Settings</string>
+    <string name="adjust_workouts">Adjust Workouts</string>
+    <string name="tick_sounds_every_second">Tick Sounds Every Second</string>
+    <string name="restore_purchases">Restore Purchases</string>
+    <string name="reminder">Reminder</string>
+    <string name="forums">Forums</string>
+    <string name="forum">Forum</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="tips_screen">Tips Screen</string>
+    <string name="legal_disclaimer">Legal Disclaimer</string>
+    <string name="more_apps">More Apps</string>
+    <string name="feedback">Feedback</string>
+    <string name="share">Share</string>
+    <string name="kiip_rewards">Kiip Rewards</string>
+    <string name="ultimate_warrior">Ultimate Warrior Upgrade</string>
+
+    <!-- Legal Disclaimer-->
+    <string name="legal_disclaimer_text">This app and any information given by it or by Zen Labs LLC are for educational purpose only. They are not intended to be a substitute for professional medical advice. You should always consult your healthcare provider before beginning any fitness program.</string>
+    <string name="ok">OK</string>
+
+    <!-- Feedback-->
+    <string name="app_feedback">App Feedback</string>
+    <string name="feedback_app_name">AppName: 7 Minute Workout - HIIT Trainer</string>
+    <string name="app_version">App Version:</string>
+    <string name="device_model">Device Model:</string>
+    <string name="os_version">OS Version:</string>
+    <string name="email_app">contactus@zenlabsllc.com</string>
+    <string name="send_email">Send Email</string>
+    <string name="title_activity_forum">ForumActivity</string>
+    <string name="title_activity_go_pro">GoProActivity</string>
+    <string name="title_activity_more_apps">MoreAppsActivity</string>
+
+    <!-- GoPro-->
+    <string name="go_pro">Go Pro!</string>
+    <string name="ultimate_warrior_packg"> Ultimate Warrior Package!</string>
+    <string name="go_pro_desc_text">Upgrade to the Pro version and get these exciting features:</string>
+    <string name="go_pro_desc_text_ultimate">Upgrade to Ultimate Warrior and get these exciting new features:</string>
+    <string name="workout_log">workout log</string>
+    <string name="all_the_workouts">all the workouts!</string>
+    <string name="multiple_circuits">multiple circuits</string>
+    <string name="adjust_rest_time">adjust rest time</string>
+    <string name="adjust_exercise_time">adjust exercise time</string>
+    <string name="workout_reminders">workout reminders</string>
+    <string name="remove_ads">remove ads</string>
+    <string name="restore_purchase">Restore Purchase</string>
+    <string name="go_pro_now">Go Pro Now!</string>
+    <string name="get_ultime_warriro_now">Get Ultimate Warrior Now!</string>
+    <string name="or_just_this_one_thing">OR JUST THIS ONE THING</string>
+    <string name="dollar_zero_nine_nine">$0.99</string>
+    <string name="buy">BUY</string>
+    <string name="workout">WORKOUT</string>
+    <string name="buy_ultimate_warriror_now_monney">BUY ULTIMATE WARRIOR $3.99</string>
+    <string name="pro_settings_monney">PRO SETTINGS $1.99</string>
+
+
+    <!-- Tips-->
+    <string name="advice_1">Advice and tips from fitness experts on how to exercise safely and lose weight effectively</string>
+    <string name="advice_2">After signing up, receive a free ebook on how to maximize fat loss through running!</string>
+    <string name="advice_3">Become a part of a passionate and friendly community, ready to help each other out!</string>
+    <string name="hope_you_enjoyed">HOPE YOU ENJOYED</string>
+    <string name="your_run">YOUR WORKOUT!</string>
+    <string name="rate_dialog_question">Do you like the 7Min Workout app?</string>
+    <string name="close">close</string>
+    <string name="ask_me_later">ask me later</string>
+    <string name="thank_you">THANK YOU!</string>
+    <string name="rate_positive_question">Could you leave us a quick rating or even a review? A rating will only take 2 seconds and it will help us more than any purchase will. We\'ll continue to work hard to actively bring you more helpful updates.</string>
+    <string name="sure">SURE</string>
+    <string name="not_now">NOT NOW</string>
+    <string name="we_are_sorry_to_hear_that">WE\'RE SORRY TO HEAR THAT</string>
+    <string name="daily_inspiration">daily inspiration</string>
+    <string name="join_the_community">Join the Community</string>
+    <string name="rate_negative_question">How can we improve your experience? Would you like to email us your feedback?</string>
+    <string name="tip">tip: daily inspiration can be turned off under settings</string>
+    <string name="register_now">register now</string>
+    <string name="type_email">type in your email address</string>
+    <string name="tip1_update">We\'ve completely updated our award winning user\ninterface and have included 2 brand new skins for free! Check out the sleek new skins in the settings tab.\n\nWant more awesome colorful designs to customize the app even more? Check them out under settings!</string>
+    <string name="tip2_update">{{NAME}} can now utilize your motion coprocessor and integrate seamlessly with Google Fit to keep track of your distance and calories(available in {{NAME}} Pro)\n\nTap the center dial to flip the timer and reveal your distance and calories.</string>
+    <string name="PREFS">prefs</string>
+
+    <!-- share -->
+    <string name="share_subject">Check out the new 7 minute workout app!</string>
+    <string name="share_text">Hey! check out the newest 7 Minute Workout app.\n\nUsing only body weight, a chair and a wall, these 12 exercises will give you a great high intensity burn and it only takes 7 minutes! Get a great pump and workout anywhere, anytime. (7 Minute Workout - HIIT Trainer)\n\nYou can also check out their awesome community here:\nhttp://www.facebook.com/zenlabsfitness \nhttp://twitter.com/zenlabsfitness \nhttp://instagram.com/zenlabsfitness \nhttp://forums.zenlabsfitness.com
+</string>
+
+    <!-- reminder-->
+    <string name="title_activity_reminder">ReminderActivity</string>
+    <string name="new_alarm">New Alarm</string>
+    <string name="save_alarm">SAVE ALARM</string>
+    <string name="delete">DELETE</string>
+    <string name="set_hour">SET HOUR</string>
+    <string name="set_minutes">SET MINUTES</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="notification_text">Time to workout! It\'ll only take you 7 minutes!</string>
+    <string name="click_to_run">click to run</string>
+    <string-array name="hour_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="minute_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+    </string-array>
+
+    <!-- Home-->
+    <string name="slide_to_start_workout">Slide to start workout</string>
+    <string name="exercise">EXERCISE</string>
+    <string name="rest">REST</string>
+    <string name="circuit">CIRCUIT</string>
+    <string name="sec">SEC.</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_exercise_info">ExerciseInfoActivity</string>
+    <string name="unlock_099">Unlock $0.99</string>
+
+    <!-- Exercise Info-->
+    <string name="preparation">Preparation</string>
+    <string name="execution">Execution</string>
+    <string name="title_activity_workout">WorkoutActivity</string>
+
+    <!-- Workout-->
+    <string name="next_exercise">NEXT EXERCISE: </string>
+    <string name="previous">PREVIOUS</string>
+    <string name="next">NEXT</string>
+    <string name="of">OF</string>
+    <string name="see_instructions">SEE INSTRUCTIONS</string>
+    <string name="workout_paused">WORKOUT\nPAUSED</string>
+    <string name="rest_countdown">REST COUNTDOWN</string>
+    <string name="take_a_breath">Take a Breath!</string>
+    <string name="last_exercise">LAST EXERCISE</string>
+
+    <!-- Information Dialog-->
+    <string name="question_quit_workout">Are you sure you want to quit?</string>
+    <string name="yes_sure">Yes, I\'m sure.</string>
+    <string name="no_keep_going">No. Let\'s keep going!</string>
+    <string name="title_activity_workout_completed2">WorkoutCompleted2Activity</string>
+
+    <!-- Workout Completed-->
+    <string name="workout_completed">Workout Completed</string>
+    <string name="workout_summary">Workout Summary</string>
+    <string name="my_achievements_caps">MY ACHIEVEMENTS</string>
+    <string name="for_">for</string>
+    <string name="done_caps">DONE</string>
+    <string name="workout_option">WORKOUT\nOPTION</string>
+    <string name="cycles_completed">CYCLES\nCOMPLETED</string>
+    <string name="share_info_text">Share your stats with friends and encourage them to get fit!</string>
+    <string name="application_unavailable">Application unavailable</string>
+    <string name="error_app_not_found">You need to install the application on your device in order to share.</string>
+    <string name="sharing_text_workout_end">I just powered through a 7 minute workout by @zenlabsfitness and am feeling good! #zen7minute #everymomentcounts #healthy #exercise #workout</string>
+    <string name="title_activity_achievements">AchievementsActivity</string>
+    <string name="title_activity_adjust_workouts">AdjustWorkoutsActivity</string>
+
+    <!-- Adjust Workout-->
+    <string name="adjust_workout">Adjust Workout</string>
+    <string name="save_my_settings">SAVE MY SETTINGS</string>
+    <string name="exercise_time_in_seconds">EXERCISE TIME IN SECONDS</string>
+    <string name="rest_time_in_seconds">REST TIME IN SECONDS</string>
+    <string name="number_of_circuits">NUMBER OF CIRCUITS</string>
+
+    <!-- Wokrout Log-->
+    <string name="workout_log_title">Workout Log</string>
+    <string name="seven_minute_workout_completed">7 Minute Workout Completed</string>
+
+    <!-- Facebook Prefield Text Popup-->
+    <string name="thanks">THANKS!</string>
+    <string name="never_show_this">NEVER SHOW THIS</string>
+    <string name="prefield_facebook_popup_text">IF YOU WANT A PRE-FILLED TEXT, JUST LONG PRESS ON THE CURSOR AND HIT \"PASTE\"."</string>
+
+    <!-- GoToLikeFollow PopUp-->
+    <string name="follow_us_twitter_text">Follow us on Twitter for useful health tips, motivation, delicious recipes, and more!</string>
+    <string name="like_us_facebook_text">Join the friendly community on Facebook for useful health tips and cool motivational posts!</string>
+    <string name="follow_us_instagram_text">Follow us on Instagram to see awesome motivational pics and inspirational success stories!</string>
+    <string name="no_thanks">No thanks</string>
+    <string name="follow_us">Follow us</string>
+    <string name="like_us">Like us</string>
+    <string name="share_url_facebook_browser">https://www.facebook.com/343577675683891/</string>
+    <string name="share_url_twitter_browser">https://twitter.com/zenlabsfitness/</string>
+    <string name="share_url_instagram_browser">https://instagram.com/zenlabsfitness/</string>
+
+    <!-- Achievements Activity-->
+    <string name="achievements">Achievements</string>
+    <string name="precent_text_at_achievements">%\nCOMPLETED</string>
+
+    <!-- Admpb Banner-->
+    <string name="banner_ad_unit_id">ca-app-pub-7527075736358168/9788011345</string>
+    <string name="title_activity_youtube_web_view">YoutubeWebViewActivity</string>
+
+</resources>

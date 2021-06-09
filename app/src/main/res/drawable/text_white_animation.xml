@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splash_animation" android:oneshot="false">
+    <item android:drawable="@drawable/slide_to_start_text_background1" android:duration="200" />
+    <item android:drawable="@drawable/slide_to_start_text_background2" android:duration="200" />
+    <item android:drawable="@drawable/slide_to_start_text_background3" android:duration="200" />
+    <item android:drawable="@drawable/slide_to_start_text_background4" android:duration="200" />
+    <item android:drawable="@drawable/slide_to_start_text_background5" android:duration="200" />
+    <item android:drawable="@drawable/slide_to_start_text_background6" android:duration="200" />
+    <item android:drawable="@drawable/slide_to_start_text_background7" android:duration="200" />
+    <item android:drawable="@drawable/slide_to_start_text_background8" android:duration="200" />
+    <item android:drawable="@drawable/slide_to_start_text_background9" android:duration="200" />
+    <item android:drawable="@drawable/slide_to_start_text_background10" android:duration="200" />
+    <item android:drawable="@drawable/slide_to_start_text_background11" android:duration="200" />
+    <item android:drawable="@drawable/slide_to_start_text_background12" android:duration="200" />
+    <item android:drawable="@drawable/slide_to_start_text_background13" android:duration="200" />
+    <item android:drawable="@drawable/slide_to_start_text_background14" android:duration="200" />
+    <item android:drawable="@drawable/slide_to_start_text_background15" android:duration="200" />
+</animation-list>

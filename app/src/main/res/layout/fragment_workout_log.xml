@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/workoutLogFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_gray_blue_menu_background_color" />
+
+    <RelativeLayout
+        android:layout_below="@+id/workoutLogFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/workoutLogSeparatorView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/gray_workout_bg_color" />
+
+        <ListView
+            android:id="@+id/workoutLogListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/workoutLogMyAchievementsRelativeLayout"
+            android:layout_below="@+id/workoutLogSeparatorView"
+            android:divider="@color/gray_workout_bg_color"
+            android:dividerHeight="1dp"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:listSelector="@android:color/transparent"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <RelativeLayout
+            android:id="@+id/workoutLogMyAchievementsRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/blue_button_color"
+            android:gravity="center">
+
+
+            <com.zenlabs.sevenminuteworkout.utils.FontButton
+                android:id="@+id/workoutLogMyAchievementsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padding_action_bar"
+                android:layout_toRightOf="@+id/workoutLogMyAchievementsTrohyImageView"
+                android:background="@android:color/transparent"
+                android:text="@string/my_achievements_caps"
+                android:textSize="@dimen/action_bar_text_size"
+                font:customFont="SohoGothicPro-Regular.otf" />
+
+
+            <ImageView
+                android:id="@+id/workoutLogMyAchievementsTrohyImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/workout_completed_trohy_size"
+                android:layout_centerVertical="true"
+                android:src="@drawable/trophy_icon" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
